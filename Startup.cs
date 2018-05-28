@@ -18,6 +18,7 @@ using System.Text;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using System.Net;
+using AutoMapper;
 
 namespace DatingApp.API
 {
@@ -44,6 +45,7 @@ namespace DatingApp.API
                        .AllowAnyHeader()
                        .AllowCredentials();
             }));
+            services.AddAutoMapper();
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IDatingRepository, DatingRepository>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
