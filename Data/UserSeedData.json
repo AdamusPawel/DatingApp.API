@@ -1,221 +1,71 @@
 [
-    {
-      "Username": "Loraine",
-      "Gender": "female",
-      "DateOfBirth": "1964-05-05",
-      "Password": "password",
-      "KnownAs": "Loraine",
-      "Created": "2017-02-14",
-      "Introduction": "Minim dolore tempor laboris consequat velit sint veniam adipisicing sint cupidatat qui ea tempor. Ad eu excepteur dolor elit anim dolor incididunt tempor occaecat ullamco duis. Officia ut aute officia excepteur est dolor duis voluptate cillum anim anim. Fugiat nostrud veniam et laboris incididunt nostrud nostrud non nisi. Labore mollit esse nulla ullamco excepteur cillum eu quis. Aliqua do cillum do labore laborum excepteur proident exercitation do cillum nulla ea veniam.\r\n",
-      "LookingFor": "Nisi ipsum minim in consequat consectetur anim irure nulla proident minim. Mollit culpa ullamco pariatur velit. Proident consequat excepteur amet voluptate qui aliqua commodo reprehenderit adipisicing et excepteur. Proident elit cillum pariatur est ipsum magna aliqua voluptate magna do aliqua. Sint qui pariatur eiusmod commodo elit. Minim aute tempor irure laboris culpa quis.\r\n",
-      "Interests": "Sunt sint cillum eu ex qui non.",
-      "City": "Trucksville",
-      "Country": "Cote D'Ivoire (Ivory Coast)",
-      "Photos": [
-        {
-          "url": "https://randomuser.me/api/portraits/women/98.jpg",
-          "isMain": true,
-          "description": "Sint ea exercitation magna veniam quis sit excepteur mollit aute irure eiusmod proident ad."
-        }
-      ]
-    },
-    {
-      "Username": "Patrice",
-      "Gender": "female",
-      "DateOfBirth": "1981-10-19",
-      "Password": "password",
-      "KnownAs": "Patrice",
-      "Created": "2017-07-26",
-      "Introduction": "Aliqua laboris ullamco aliqua nulla nostrud magna nulla exercitation. Ullamco aute dolor ex amet voluptate proident ipsum amet ullamco incididunt. Anim ad sit officia consectetur proident incididunt deserunt id exercitation.\r\n",
-      "LookingFor": "Duis dolore mollit occaecat incididunt nisi ut anim et proident aute officia officia magna. Laboris elit nisi ea cillum fugiat. Cupidatat aliqua sint sit duis nulla nisi ullamco cupidatat occaecat velit ut mollit do. Enim ad aute quis commodo duis aliquip esse proident amet mollit ad.\r\n",
-      "Interests": "Occaecat officia duis amet duis nulla cupidatat magna.",
-      "City": "Harold",
-      "Country": "Madagascar",
-      "Photos": [
-        {
-          "url": "https://randomuser.me/api/portraits/women/25.jpg",
-          "isMain": true,
-          "description": "Ipsum aute nostrud incididunt ut esse."
-        }
-      ]
-    },
-    {
-      "Username": "Queen",
-      "Gender": "female",
-      "DateOfBirth": "1976-04-01",
-      "Password": "password",
-      "KnownAs": "Queen",
-      "Created": "2017-07-08",
-      "Introduction": "Incididunt esse ea Lorem est reprehenderit esse Lorem eu consequat officia ipsum do ex. Mollit do magna non aliquip anim cupidatat. Dolore laboris voluptate non quis veniam sint in culpa commodo laboris mollit quis. Commodo et duis ex incididunt nostrud excepteur pariatur amet amet dolore minim in occaecat eu. Anim Lorem sint aliquip proident. Esse commodo aute non duis nulla nostrud aliquip.\r\n",
-      "LookingFor": "Laboris in cillum duis sit eu fugiat ad aliquip. Ullamco Lorem aliqua id ullamco est duis dolor laborum occaecat aliquip commodo occaecat labore. Consectetur enim quis elit duis. Labore labore aliqua dolor nulla velit laborum non consequat. Sint cupidatat enim elit duis eiusmod velit pariatur enim sunt irure.\r\n",
-      "Interests": "Lorem dolor non nulla quis aute minim duis consequat eu consequat.",
-      "City": "Moquino",
-      "Country": "Jordan",
-      "Photos": [
-        {
-          "url": "https://randomuser.me/api/portraits/women/93.jpg",
-          "isMain": true,
-          "description": "Eiusmod elit qui nisi qui dolore incididunt reprehenderit culpa."
-        }
-      ]
-    },
-    {
-      "Username": "Rosemarie",
-      "Gender": "female",
-      "DateOfBirth": "1977-10-16",
-      "Password": "password",
-      "KnownAs": "Rosemarie",
-      "Created": "2017-03-21",
-      "Introduction": "Et enim irure culpa sint veniam excepteur Lorem elit. Commodo deserunt laborum laboris in amet pariatur elit. Reprehenderit exercitation ex voluptate mollit qui duis ipsum. Deserunt proident esse sint magna laboris amet magna esse qui incididunt minim incididunt sit adipisicing. Excepteur tempor laborum quis ex elit officia.\r\n",
-      "LookingFor": "Irure esse laboris culpa incididunt cupidatat dolore reprehenderit consequat officia ipsum consequat consectetur pariatur. Commodo qui quis eiusmod exercitation mollit tempor fugiat dolore aliquip officia incididunt consequat. Aliquip voluptate laboris incididunt tempor dolor quis elit dolore qui qui sint eiusmod sint esse. Ex commodo reprehenderit ea sit cupidatat. Consectetur eu irure labore ipsum ullamco Lorem aliqua dolore esse cillum voluptate enim cupidatat.\r\n",
-      "Interests": "Pariatur ipsum ad sint ex elit amet ullamco labore.",
-      "City": "Winfred",
-      "Country": "Italy",
-      "Photos": [
-        {
-          "url": "https://randomuser.me/api/portraits/women/21.jpg",
-          "isMain": true,
-          "description": "Mollit esse qui ea exercitation fugiat mollit aute officia fugiat reprehenderit."
-        }
-      ]
-    },
-    {
-      "Username": "Katy",
-      "Gender": "female",
-      "DateOfBirth": "1983-06-14",
-      "Password": "password",
-      "KnownAs": "Katy",
-      "Created": "2017-06-04",
-      "Introduction": "Voluptate sint commodo non nisi aliqua. Veniam id pariatur veniam voluptate. Sunt pariatur pariatur commodo esse adipisicing id ad exercitation eu excepteur. Laboris proident tempor amet aute dolore elit in.\r\n",
-      "LookingFor": "Cillum ea exercitation dolore tempor consectetur nulla dolore tempor veniam duis Lorem. Cupidatat nulla ipsum commodo enim incididunt irure esse magna enim. Cupidatat culpa aliqua esse id ad sit aliqua ut velit dolore sit velit. Magna aute amet dolore adipisicing culpa adipisicing. Labore consequat tempor fugiat enim in duis quis adipisicing exercitation.\r\n",
-      "Interests": "Non officia fugiat occaecat nostrud.",
-      "City": "Henrietta",
-      "Country": "Hungary",
-      "Photos": [
-        {
-          "url": "https://randomuser.me/api/portraits/women/46.jpg",
-          "isMain": true,
-          "description": "Laboris sunt cillum dolore consectetur cillum ex deserunt eu nulla velit deserunt."
-        }
-      ]
-    },
-    {
-        "Username": "Vasquez",
-        "Gender": "male",
-        "DateOfBirth": "1966-03-21",
-        "Password": "password",
-        "KnownAs": "Vasquez",
-        "Created": "2017-07-18",
-        "Introduction": "Et culpa duis dolore excepteur non reprehenderit. Labore nisi ullamco magna sunt duis in nostrud do fugiat irure laboris. Duis culpa ex sunt consequat cillum anim cillum reprehenderit dolore commodo incididunt labore.\r\n",
-        "LookingFor": "Quis do excepteur irure adipisicing laborum dolor deserunt fugiat laborum quis. Officia excepteur labore quis occaecat aliqua aliqua labore veniam quis sint. Laboris laboris culpa excepteur non nostrud laborum veniam. Nostrud velit ipsum excepteur esse laboris eiusmod ullamco duis. Est Lorem minim cillum labore labore commodo adipisicing reprehenderit occaecat anim. Ex Lorem deserunt velit cupidatat. Reprehenderit nulla ipsum eiusmod veniam enim eiusmod eu.\r\n",
-        "Interests": "Reprehenderit dolor mollit excepteur magna ut consectetur nostrud duis ullamco eiusmod.",
-        "City": "Chloride",
-        "Country": "Egypt",
-        "Photos": [
-          {
-            "url": "https://randomuser.me/api/portraits/men/43.jpg",
-            "isMain": true,
-            "description": "Proident magna commodo labore adipisicing ad labore."
-          }
-        ]
-      },
       {
-        "Username": "Little",
+        "Username": "BruceWayne",
         "Gender": "male",
-        "DateOfBirth": "1989-02-27",
+        "DateOfBirth": "1939-05-01",
         "Password": "password",
-        "KnownAs": "Little",
-        "Created": "2017-03-21",
-        "Introduction": "Deserunt magna ex aliquip et Lorem reprehenderit fugiat eiusmod ullamco et ipsum eu. Do nulla officia ex reprehenderit Lorem. Ullamco nulla cupidatat ad veniam quis fugiat aliquip cupidatat. Nostrud elit esse laborum voluptate dolor elit nulla. Ea anim eiusmod pariatur nisi minim do cupidatat. Quis do aliquip qui est cillum.\r\n",
-        "LookingFor": "Minim quis incididunt ut quis nulla ex eiusmod quis. Cupidatat sit velit proident anim proident proident. Amet eiusmod consequat exercitation laboris in nostrud non in do veniam. Non nisi irure nulla anim eu ea aliquip deserunt aliqua sint.\r\n",
-        "Interests": "Laborum officia ad do dolore.",
-        "City": "Tryon",
-        "Country": "Liberia",
-        "Photos": [
-          {
-            "url": "https://randomuser.me/api/portraits/men/53.jpg",
-            "isMain": true,
-            "description": "Et tempor proident qui velit duis amet exercitation velit ut est adipisicing consequat."
-          }
-        ]
-      },
-      {
-        "Username": "Cunningham",
-        "Gender": "male",
-        "DateOfBirth": "1951-04-03",
-        "Password": "password",
-        "KnownAs": "Cunningham",
-        "Created": "2017-07-17",
-        "Introduction": "Velit ut ipsum aliqua irure elit voluptate sit quis. Non minim occaecat consectetur labore pariatur aute incididunt labore aute culpa. Commodo cillum sunt elit Lorem.\r\n",
-        "LookingFor": "Non ut sit sit reprehenderit sunt consectetur. Commodo non anim Lorem aliqua velit amet cupidatat eu sit. Consectetur sit ut commodo elit consectetur non exercitation cillum. Esse id eiusmod cupidatat ex consequat. Eu dolor reprehenderit veniam aute cupidatat non. Nostrud esse tempor tempor nostrud sunt consequat est in proident.\r\n",
-        "Interests": "Mollit qui officia et ad ullamco.",
-        "City": "Summerset",
-        "Country": "Pakistan",
-        "Photos": [
-          {
-            "url": "https://randomuser.me/api/portraits/men/52.jpg",
-            "isMain": true,
-            "description": "Culpa mollit minim voluptate nostrud elit sint aute cillum et excepteur nostrud cillum esse proident."
-          }
-        ]
-      },
-      {
-        "Username": "Mendoza",
-        "Gender": "male",
-        "DateOfBirth": "1978-05-19",
-        "Password": "password",
-        "KnownAs": "Mendoza",
-        "Created": "2017-03-30",
-        "Introduction": "Laboris sit aliquip tempor anim proident enim in aute cupidatat. Commodo anim dolor aliquip aliqua eiusmod sunt non irure duis velit in aliquip est reprehenderit. Incididunt pariatur irure culpa nulla ad ipsum adipisicing aliquip sint sint do irure nostrud. Sint ex sint duis magna elit amet voluptate enim. Adipisicing amet ea tempor sint dolor pariatur nulla qui veniam et nulla.\r\n",
-        "LookingFor": "Sit cillum cupidatat nostrud nostrud sint occaecat fugiat culpa et. Id ea proident esse dolor reprehenderit pariatur officia velit cupidatat labore exercitation aliquip laborum. Officia adipisicing enim voluptate qui aliquip laboris quis veniam ex veniam ad. Labore ullamco commodo minim eiusmod aliquip.\r\n",
-        "Interests": "Fugiat velit do sit irure velit Lorem exercitation et adipisicing.",
-        "City": "Snowville",
-        "Country": "Niue",
-        "Photos": [
-          {
-            "url": "https://randomuser.me/api/portraits/men/16.jpg",
-            "isMain": true,
-            "description": "Velit duis do proident voluptate est nulla sit aliquip amet est est deserunt do."
-          }
-        ]
-      },
-      {
-        "Username": "Morton",
-        "Gender": "male",
-        "DateOfBirth": "1999-02-18",
-        "Password": "password",
-        "KnownAs": "Morton",
-        "Created": "2017-01-30",
-        "Introduction": "Aliquip est consectetur culpa consectetur incididunt enim anim amet elit sint ipsum exercitation. Commodo incididunt excepteur aliqua qui et irure laboris. Anim deserunt deserunt elit magna reprehenderit quis duis officia ut culpa incididunt. Enim minim voluptate cupidatat ut fugiat veniam officia amet commodo eu pariatur adipisicing.\r\n",
-        "LookingFor": "Cupidatat id incididunt minim dolore exercitation fugiat nostrud eiusmod culpa aliquip non. Occaecat consectetur pariatur tempor magna non veniam amet dolore sit quis. Culpa elit non labore non. Deserunt ea ad Lorem est aliquip sint esse pariatur laborum magna. Eiusmod consectetur Lorem magna aliquip eiusmod fugiat cupidatat consectetur labore do. Elit quis ad sit adipisicing. Tempor enim ad in cillum ipsum ea non in ad nostrud.\r\n",
-        "Interests": "Labore minim commodo eu consequat nostrud eiusmod laborum deserunt non ipsum ad.",
-        "City": "Seymour",
-        "Country": "Kazakhstan",
-        "Photos": [
-          {
-            "url": "https://randomuser.me/api/portraits/men/68.jpg",
-            "isMain": true,
-            "description": "Labore qui proident cillum quis tempor consectetur nisi sint nulla."
-          }
-        ]
-      },
-      {
-        "Username": "Pawel",
-        "Gender": "male",
-        "DateOfBirth": "1995-06-30",
-        "Password": "adamus",
-        "KnownAs": "Makarow",
+        "KnownAs": "BATMAN",
         "Created": "2018-05-27",
-        "Introduction": "Tak to ja.\r\n",
-        "LookingFor": "Ładne kocice co też umieją programować.\r\n",
-        "Interests": "Zakręcony na tle programowania zwłaszcza .NET Core 2.0 + Angular v5.",
-        "City": "Włosienica",
-        "Country": "Poland",
+        "Introduction": "NANANANAANANA BATMAAAAAN.\r\n",
+        "LookingFor": "Catwoman.\r\n",
+        "Interests": "Dealing with a Joker.",
+        "City": "Gotham",
+        "Country": "United States of America",
         "Photos": [
           {
-            "url": "https://i.imgur.com/KWYxiTk.jpg",
+            "url": "https://vignette.wikia.nocookie.net/dumbledoresarmyroleplay/images/7/76/Batman-avatar-origins.png",
             "isMain": true,
-            "description": "Moja fotka."
+            "description": "My awesome profile photo."
+          },
+          {
+            "url": "https://www.planwallpaper.com/static/images/batman_3284690b.jpg",
+            "isMain": false,
+            "description": "Joke(r)s on it."
+          },
+          {
+            "url": "https://www.planwallpaper.com/static/images/2559799-bak_sshot075.jpg",
+            "isMain": false,
+            "description": "Rainy day."
+          },
+          {
+            "url": "https://www.planwallpaper.com/static/images/4058802-6025115082-31152.jpg",
+            "isMain": false,
+            "description": "My awesome photo."
+          }
+        ]
+      },
+      {
+        "Username": "WadeWilson",
+        "Gender": "male",
+        "DateOfBirth": "1939-05-01",
+        "Password": "password",
+        "KnownAs": "DEADPOOL",
+        "Created": "1990-01-01",
+        "Introduction": "CHIMICHANGAS.\r\n",
+        "LookingFor": "Sexy ladies.\r\n",
+        "Interests": "Causing some mayhem.",
+        "City": "Unknown",
+        "Country": "Canada",
+        "Photos": [
+          {
+            "url": "https://avatarfiles.alphacoders.com/122/122345.jpg",
+            "isMain": true,
+            "description": "My awesome profile photo."
+          },
+          {
+            "url": "http://www.comingsoon.net/assets/uploads/2018/03/deadpool-and-friends.jpg",
+            "isMain": false,
+            "description": "With friends!"
+          },
+          {
+            "url": "http://cdn.wegotthiscovered.com/wp-content/uploads/2018/02/Deadpool-Colossus.jpg",
+            "isMain": false,
+            "description": "Le gasp."
+          },
+          {
+            "url": "https://static0.srcdn.com/wordpress/wp-content/uploads/2017/02/Deadpool-loves-kittens.jpg",
+            "isMain": false,
+            "description": "BECAUSE CATS ARE SO CUTE! <3"
           }
         ]
       }
