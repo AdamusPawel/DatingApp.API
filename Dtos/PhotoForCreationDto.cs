@@ -15,6 +15,6 @@ namespace DatingApp.API.Dtos
         {
             DateAdded = DateTime.Now;
         }
-
+        
     }
 }

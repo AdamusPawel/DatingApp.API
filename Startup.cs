@@ -67,7 +67,7 @@ namespace DatingApp.API
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                //seeder.SeedUsers();
+                
             }
             else
             {
@@ -86,7 +86,7 @@ namespace DatingApp.API
                     });
                 });
             }
-            
+            //seeder.SeedUsers();
             app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials());
             app.UseDefaultFiles();
             app.UseStaticFiles();
