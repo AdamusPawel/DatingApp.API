@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -27,16 +28,35 @@ namespace DatingApp.API.Data
 
         public async Task<PagedList<User>> GetUsers(UserParams userParams)
         {
-            var users = _context.Users.Include(p => p.Photos).AsQueryable();
+            var users = _context.Users.Include(p => p.Photos).OrderByDescending(u => u.LastActive).AsQueryable();
 
             users = users.Where(u => u.Id != userParams.UserId);
 
             users = users.Where(u => u.Gender == userParams.Gender);
 
-            if (userParams.MinAge != 18 || userParams.MaxAge != 99) {
-                users = users.Where( u => u.DateOfBirth.CalculateAge() >= userParams.)
+            if (userParams.MinAge != 18 || userParams.MaxAge != 99)
+            {
+                // users = users.Where(u => u.DateOfBirth.CalculateAge() >= userParams.MinAge
+                //     && u.DateOfBirth.CalculateAge() <= userParams.MaxAge);
+                var min = DateTime.Today.AddYears(-userParams.MaxAge - 1);
+                var max = DateTime.Today.AddYears(-userParams.MinAge);
+
+                users = users.Where(u => u.DateOfBirth >= min && u.DateOfBirth <= max);
             }
-            
+
+            if (!string.IsNullOrEmpty(userParams.OrderBy))
+            {
+                switch (userParams.OrderBy)
+                {
+                    case "created":
+                        users = users.OrderByDescending(u => u.Created);
+                        break;
+                    default:
+                        users = users.OrderByDescending(u => u.LastActive);
+                        break;
+                }
+            }
+
             return await PagedList<User>.CreateAsync(users, userParams.PageNumber, userParams.PageSize);
         }
 
@@ -46,6 +66,7 @@ namespace DatingApp.API.Data
 
             return user;
         }
+
         public async Task<bool> SaveAll()
         {
             return await _context.SaveChangesAsync() > 0;
@@ -54,7 +75,7 @@ namespace DatingApp.API.Data
         public Task<Photo> GetPhoto(int id)
         {
             var photo = _context.Photos.FirstOrDefaultAsync(p => p.Id == id);
-            
+
             return photo;
         }
 
