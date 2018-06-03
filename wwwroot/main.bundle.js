@@ -1060,7 +1060,7 @@ module.exports = ".profile-image {\r\n    margin: 25px;\r\n    width: 85%;\r\n  
 /***/ "./src/app/members/member-detail/member-detail.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <h1>{{user.knownAs}}'s Profile</h1>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-4\">\r\n      <div class=\"panel panel-default\">\r\n        <img src=\"{{user.photoUrl ? user.photoUrl : '../../../assets/user.png'}}\" alt=\"{{user.knownAs}}\" class=\"profile-image thumbnail\">\r\n        <div class=\"panel-body\">\r\n          <div>\r\n            <strong>Location:</strong>\r\n            <p>{{user.city}}, {{user.country}}</p>\r\n          </div>\r\n          <div>\r\n            <strong>Age:</strong>\r\n            <p>{{user.age}}</p>\r\n          </div>\r\n          <div>\r\n            <strong>Last Active:</strong>\r\n            <p>{{user.lastActive | timeAgo}}</p>\r\n          </div>\r\n          <div>\r\n            <strong>Member Since:</strong>\r\n            <p>{{user.created | date: 'mediumDate'}}</p>\r\n          </div>\r\n        </div>\r\n        <div class=\"panel-footer\">\r\n          <div class=\"btn-group-justified\">\r\n            <div class=\"btn-group\">\r\n              <button class=\"btn btn-primary\">Like</button>\r\n            </div>\r\n            <div class=\"btn-group\">\r\n              <button class=\"btn btn-success\" (click)=\"selectTab(3)\">Message</button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"col-sm-8\">\r\n      <div class=\"tab-panel\">\r\n        <tabset class=\"member-tabset\" #memberTabs>\r\n          <tab heading=\"About {{user.knownAs}}\">\r\n            <h4><i class=\"fa fa-address-card\"></i> Description</h4>\r\n            <p>{{user.introduction}}</p>\r\n            <h4><i class=\"fa fa-binoculars\"></i> Looking For</h4>\r\n            <p>{{user.lookingFor}}</p>\r\n          </tab>\r\n          <tab heading=\"Interests\">\r\n            <h4> Interests</h4>\r\n            <p>{{user.interests}}</p>\r\n          </tab>\r\n          <tab heading=\"Photos\">\r\n            <div class=\"gallery-wrapper\">\r\n              <ngx-gallery [options]=\"galleryOptions\" [images]=\"galleryImages\"></ngx-gallery>\r\n            </div>              \r\n          </tab>\r\n          <tab heading=\"Messages\">\r\n            <app-member-messages [userId]=\"user.id\"></app-member-messages>\r\n          </tab>\r\n        </tabset>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <h1>{{user.knownAs}}'s Profile</h1>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-4\">\r\n      <div class=\"panel panel-default\">\r\n        <img src=\"{{user.photoUrl ? user.photoUrl : '../../../assets/user.png'}}\" alt=\"{{user.knownAs}}\" class=\"profile-image thumbnail\">\r\n        <div class=\"panel-body\">\r\n          <div>\r\n            <strong>Location:</strong>\r\n            <p>{{user.city}}, {{user.country}}</p>\r\n          </div>\r\n          <div>\r\n            <strong>Age:</strong>\r\n            <p>{{user.age}}</p>\r\n          </div>\r\n          <div>\r\n            <strong>Last Active:</strong>\r\n            <p>{{user.lastActive | timeAgo}}</p>\r\n          </div>\r\n          <div>\r\n            <strong>Member Since:</strong>\r\n            <p>{{user.created | date: 'mediumDate'}}</p>\r\n          </div>\r\n        </div>\r\n        <div class=\"panel-footer\">\r\n          <div class=\"btn-group-justified\">\r\n            <div class=\"btn-group\">\r\n              <button class=\"btn btn-primary\" (click)=\"sendLike(user.id)\">Like</button>\r\n            </div>\r\n            <div class=\"btn-group\">\r\n              <button class=\"btn btn-success\" (click)=\"selectTab(3)\">Message</button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"col-sm-8\">\r\n      <div class=\"tab-panel\">\r\n        <tabset class=\"member-tabset\" #memberTabs>\r\n          <tab heading=\"About {{user.knownAs}}\">\r\n            <h4><i class=\"fa fa-address-card\"></i> Description</h4>\r\n            <p>{{user.introduction}}</p>\r\n            <h4><i class=\"fa fa-binoculars\"></i> Looking For</h4>\r\n            <p>{{user.lookingFor}}</p>\r\n          </tab>\r\n          <tab heading=\"Interests\">\r\n            <h4> Interests</h4>\r\n            <p>{{user.interests}}</p>\r\n          </tab>\r\n          <tab heading=\"Photos\">\r\n            <div class=\"gallery-wrapper\">\r\n              <ngx-gallery [options]=\"galleryOptions\" [images]=\"galleryImages\"></ngx-gallery>\r\n            </div>              \r\n          </tab>\r\n          <tab heading=\"Messages\">\r\n            <app-member-messages [userId]=\"user.id\"></app-member-messages>\r\n          </tab>\r\n        </tabset>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1085,11 +1085,13 @@ var alertify_service_1 = __webpack_require__("./src/app/_services/alertify.servi
 var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
 var ngx_gallery_1 = __webpack_require__("./node_modules/ngx-gallery/bundles/ngx-gallery.umd.js");
 var ngx_bootstrap_1 = __webpack_require__("./node_modules/ngx-bootstrap/index.js");
+var auth_service_1 = __webpack_require__("./src/app/_services/auth.service.ts");
 var MemberDetailComponent = /** @class */ (function () {
-    function MemberDetailComponent(userService, alertify, route) {
+    function MemberDetailComponent(userService, alertify, route, authService) {
         this.userService = userService;
         this.alertify = alertify;
         this.route = route;
+        this.authService = authService;
     }
     MemberDetailComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -1125,6 +1127,14 @@ var MemberDetailComponent = /** @class */ (function () {
         });
         return imageUrls;
     };
+    MemberDetailComponent.prototype.sendLike = function (id) {
+        var _this = this;
+        this.userService.sendLike(this.authService.decodedToken.nameid, id).subscribe(function (data) {
+            _this.alertify.success("You have liked: " + _this.user.knownAs);
+        }, function (error) {
+            _this.alertify.error(error);
+        });
+    };
     MemberDetailComponent.prototype.selectTab = function (tabId) {
         this.memberTabs.tabs[tabId].active = true;
     };
@@ -1140,7 +1150,8 @@ var MemberDetailComponent = /** @class */ (function () {
         }),
         __metadata("design:paramtypes", [user_service_1.UserService,
             alertify_service_1.AlertifyService,
-            router_1.ActivatedRoute])
+            router_1.ActivatedRoute,
+            auth_service_1.AuthService])
     ], MemberDetailComponent);
     return MemberDetailComponent;
 }());
