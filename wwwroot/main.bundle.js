@@ -382,14 +382,12 @@ var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var AlertifyService = /** @class */ (function () {
     function AlertifyService() {
     }
-    AlertifyService.prototype.confirm = function (message, okCallback) {
-        alertify.confirm(message, function (e) {
+    AlertifyService.prototype.confirm = function (title, message, okCallback) {
+        alertify.confirm(title, message, function (e) {
             if (e) {
                 okCallback();
             }
-            else {
-            }
-        });
+        }, null);
     };
     AlertifyService.prototype.success = function (message) {
         alertify.success(message);
@@ -1526,11 +1524,9 @@ var PhotoEditorComponent = /** @class */ (function () {
     };
     PhotoEditorComponent.prototype.deletePhoto = function (id) {
         var _this = this;
-        this.alertify.confirm('Are you sure you want to delete this photo?', function () {
-            _this.userService
-                .deletePhoto(_this.authService.decodedToken.nameid, id)
-                .subscribe(function () {
-                _.remove(_this.photos, { id: id });
+        this.alertify.confirm('Delete photo', 'Are you sure to want to delete this photo?', function () {
+            _this.userService.deletePhoto(_this.authService.decodedToken.nameid, id).subscribe(function () {
+                _this.photos.splice(_.findIndex(_this.photos, { id: id }), 1);
                 _this.alertify.success('Photo has been deleted');
             }, function (error) {
                 _this.alertify.error('Failed to delete photo');
@@ -1625,7 +1621,7 @@ var MessagesComponent = /** @class */ (function () {
     };
     MessagesComponent.prototype.deleteMessage = function (id) {
         var _this = this;
-        this.alertify.confirm('Are you sure you want to delete the message?', function () {
+        this.alertify.confirm('Delete message', 'Are you sure you want to delete the message?', function () {
             _this.userService.deleteMessage(id, _this.authService.decodedToken.nameid).subscribe(function () {
                 _.remove(_this.messages, { id: id });
                 _this.alertify.success('Message has been deleted');
